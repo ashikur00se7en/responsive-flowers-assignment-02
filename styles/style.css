@@ -78,8 +78,50 @@ nav{
     color: #000000;
 }
 
+/* Banner Section Styles */
+.banner-section{
+    display: flex;
+    align-items: center;
+    margin: 7.5rem 0; 
+}
+
+.banner-section-left{
+    width: 50%;
+}
+
+.banner-section-right{
+    width: 50%;
+}
+
+.banner-section-title{
+    font-size: 4.0625rem;
+    font-weight: 700;
+    margin-top: 3.8rem;
+}
+
+.banner-section-title .always{
+    color: #000000;
+}
+
+.banner-section-title .fresh-flowers{
+    color: #E95A08;
+}
+
+.banner-section-description{
+    color: rgba(0, 0, 0, 50%);
+    font-size: 1.375rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.banner-section-right img{
+    display: block;
+    width: 100%;
+}
+
 /* Responsive Media Query */
 @media screen and (max-width: 576px) {
+    /* Navbar Media Query */
     .nav-right ul li a{
         display: none;
     }
@@ -87,6 +129,31 @@ nav{
     nav{
         margin: 0.8125rem 1rem 0 1rem;
     }
+
+    /* Banner Section Media Query */
+    .banner-section{
+        flex-direction: column-reverse;
+    }
+
+    .banner-section-left{
+        width: 100%;
+        padding: 1.75rem 1rem 0 1rem;
+    }
+
+     .banner-section-title{
+        font-size: 1.5rem;
+        padding-right: 10.625rem;
+    }
+
+    .banner-section-description{
+        width: 100%;
+        font-size: 0.875rem;
+    }
+
+   .banner-section-right{
+       width: 100%;
+   }
+
 }
 
 
