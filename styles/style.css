@@ -177,6 +177,52 @@ nav{
     border: none;
 }
 
+/* Plants Lover Section Styles */
+.plants-lover-section{
+    display: flex;
+    align-items: center;
+    gap: 3.75rem;
+    margin-top: 13.133125rem;
+    margin-bottom: 8.3675rem;
+    position: relative;
+}
+
+.plants-lover-section-left{
+    width: 50%;
+}
+
+.plants-lover-section-right{
+    width: 50%;
+}
+
+.plants-lover-section-flower-store-image{
+    display: block;
+}
+
+.trusted-badge-image{
+    width: 17.875rem;
+    height: 17.875rem;
+    position: absolute;
+    top: -8rem;
+    left: 21.8rem;
+}
+
+.plants-lover-section-right h1{
+    font-size: 3.125rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.plants-lover-section-right ul{
+    margin-left: 2.3rem;
+}
+
+.plants-lover-section-right li{
+    font-size: 1.375rem;
+    font-weight: 400;
+    margin: 1.25rem 0;
+}
+
 /* Responsive Media Query */
 @media screen and (max-width: 576px) {
     /* Navbar Media Query */
@@ -224,6 +270,44 @@ nav{
 
    .card button{
     padding: 1.1875rem 1.90625rem;
+   }
+
+   /* Plants Lover Section Media Query */
+   .plants-lover-section{
+    flex-direction: column;
+    margin: 2.59375rem 1rem 0 1rem;
+   }
+
+   .plants-lover-section-left{
+    width: 100%;
+   }
+
+   .plants-lover-section-right{
+    width: 100%;
+   }
+
+   .plants-lover-section-flower-store-image{
+    width: 100%;
+   }
+
+   .plants-lover-section-right h1{
+    font-size: 1.5rem;
+   }
+
+   .break{
+    display: none;
+   }
+
+   .plants-lover-section-right ul li{
+    font-size: 0.875rem;
+   }
+
+   .plants-lover-section-right ul{
+    margin-left: 1.2rem;
+   }
+
+   .trusted-badge-image{
+    display: none;
    }
 
 }
