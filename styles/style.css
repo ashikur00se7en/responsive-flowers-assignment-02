@@ -175,6 +175,7 @@ nav{
     font-size: 1rem;
     font-weight: 600;
     border: none;
+    cursor: pointer;
 }
 
 /* Plants Lover Section Styles */
@@ -205,6 +206,16 @@ nav{
     position: absolute;
     top: -8rem;
     left: 21.8rem;
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
 
 .plants-lover-section-right h1{
@@ -408,7 +419,7 @@ footer > div{
 
 .useful-links{
     display: grid;
-    place-items: center;
+    place-content: center;
     gap: 2rem;
 }
 
@@ -474,6 +485,10 @@ footer > div{
 
    .card button{
     padding: 1.1875rem 1.90625rem;
+   }
+
+   .display-none-card{
+    display: none;
    }
 
    /* Plants Lover Section Media Query */
@@ -569,7 +584,7 @@ footer > div{
 
    .useful-links{
     margin-top: 1.25rem;
-    place-items: start;
+    place-content: start;
    }
 
    .social-media-links{
